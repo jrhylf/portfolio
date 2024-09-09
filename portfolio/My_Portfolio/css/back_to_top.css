@@ -1,0 +1,61 @@
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px;
+    right: 80px;
+    z-index: 2000; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: var(--bg-color1); /* Text color */
+    background-color: var(--bg-color3); /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+    transition: 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    color: var(--text-color1);
+    background-color: var(--text-description); /* Darker background on hover */
+}
+
+/* #backToTopBtn:active {
+    outline: 2px solid var(--text-description);
+    outline-offset: 4px;
+    border-radius: 5px;
+} */
+
+i.arrow_upward {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+button#backToTopBtn, i.arrow_upward {
+    vertical-align: middle;
+}
+
+/* Mobile devices in Portrait */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    #backToTopBtn {
+        bottom: 60px;
+        right: 30px;
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+    }
+
+    .backToTopText {
+        display: none; /* Hide text in mobile view */
+    }
+
+    i.arrow_upward {
+        height: 32px;
+        width: 32px;
+        font-size: 32px;
+        margin-left: 0;
+    }
+}
+

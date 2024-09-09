@@ -1,0 +1,35 @@
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slideUp 2s ease-out;
+}
+
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    z-index: 2;
+}
+
+h1, .home_subText {
+    margin: 0;
+    padding: 0;
+    opacity: 0; /* Ensure elements are hidden initially */
+}
+
+.slide-up {
+    animation: slideUp 2s ease-out forwards; /* forwards to retain the final state */
+}
+
