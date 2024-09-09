@@ -1,0 +1,48 @@
+.pl-logos {
+    height: 8rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    background-color: var(--text-color1);
+}
+
+.marquee {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: calc(200%); /* Adjust to fit the number of logos */
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+    transform: translateX(0%);
+    }
+    100% {
+    transform: translateX(-50%); /* Adjust based on number of logos */
+    }
+}
+
+.pl-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: var(--bg-color3);
+}
+
+.icon {
+    height: 40px;
+    width: auto;
+}
+
+
+

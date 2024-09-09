@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | John Rhyl Fernandez</title>
+
+    <!-- Security -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';"> -->
+
+    <!-- Local -->
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animated_bg.css">
+    <link rel="stylesheet" href="css/pl-logos.css">
+    <link rel="stylesheet" href="css/home_animation.css">
+    <link rel="stylesheet" href="css/back_to_top.css">
+    <link rel="stylesheet" href="css/project_card.css">
+    <link rel="stylesheet" href="css/custom_scroll.css">
+    <link rel="shortcut icon" href="images/JF Logo/JF_logo.png" type="image/x-icon">
+
+    <!-- Online -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <img src="images/JF Logo/JF_logo.png" alt="Logo" class="preloader-logo">
+    </div>
+
+    <header id="header" class="header">
+      <div class="img_container">
+        <img src="images/JF Logo/JF_logo.png" alt="JF logo" class="logo" title="John Rhyl Fernandez">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="menuIcon_container" title="Menu">
+        <i class="material-icons" title="Menu">menu_icon</i>
+      </div>
+    </header>
+
+    <section id="home">
+      <div id="bg">
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+      </div>
+
+      <div class="page">
+        <h1 class="slide-up">Hi, I am Rhyl</h1>
+        <p class="home_subText slide-up">Aspiring
+          <span id="typing-text"></span>
+        </p>
+      </div>
+    </section>
+    
+    <section id="about">
+      <div class="page">
+        <h2>About me</h2>
+      </div>
+
+      <div class="about_description">
+        <div class="self_image">
+          <img src="images/me/me.jpg" alt="image" id="myImage">
+        </div>
+
+        <div class="desc">
+          <div class="profile-container">
+            <h2>Fernandez, John Rhyl R.</h2>
+            <a href="https://www.linkedin.com/in/johnrhylfernandez/" target="_blank" rel="noopener" class="profile">LinkedIn Profile</a>
+          </div>
+          <br>
+          <div>
+            <span class="center_mobile">
+              A recent graduate from STI College Alabang specializing in 
+              Web Development. Developed several software projects, 
+              showcasing technical skills and achieving successful results.
+            </span>
+          </div>
+          <br>
+          <div class="achievements">
+            <h3>Achievements</h3>
+            <div class="credentials_container">
+              <span class="achievement"><i class="material-icons">verified</i></span>
+              <div class="achievement"><span class="description">Awarded as Dean's Lister for 3 consecutive semesters.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="achievement"><i class="material-icons">verified</i></span>
+              <div class="achievement"><span class="description">Awarded as President's Lister for 2 consecutive semesters.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="achievement"><i class="material-icons">verified</i></span>
+              <div class="achievement"><span class="description">Achieved 3rd Place at CodeFest - Tagisan ng Talino Local Competition.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="achievement"><i class="material-icons">verified</i></span>
+              <div class="achievement"><span class="description"><span>Achieved Most Outstanding Thesis:</span> <span>An Android Application and Web-Based Clearance Signing System for STI College Alabang.</span></span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="achievement"><i class="material-icons">verified</i></span>
+              <div class="achievement"><span class="description">Programmer of the Year 2023-2024</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="achievement"><i class="material-icons">verified</i></span>
+              <div class="achievement"><span class="description">Graduated Cum Laude in the academic year 2023-2024.</span></div>
+            </div>
+          </div>
+          <br>
+          <div class="skills">
+            <div class="hard">
+              <h3>Technical Skills</h3>
+              <div class="credentials_container">
+                <span class="skill"><i class="material-icons">arrow_right</i></span>
+                <div class="skill"><span class="description">Database Management</span></div>
+              </div>
+              <div class="credentials_container">
+                <span class="skill"><i class="material-icons">arrow_right</i></span>
+                <div class="skill"><span class="description">Web Development: PHP, MySQL, and ReactJS</span></div>
+              </div>
+              <div class="credentials_container">
+                <span class="skill"><i class="material-icons">arrow_right</i></span>
+                <div class="skill"><span class="description">Software Development: C# Window Forms</span></div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="certificates">
+            <h3>Certificates</h3>
+            <!-- TODO: Popup show certificate -->
+            <!-- or -->
+            <!-- TODO: Display certificate images in a separate cards -->
+            <div class="credentials_container">
+              <span class="cert"><i class="material-icons">arrow_right</i></span>
+              <div class="cert"><span class="description">Completed the course <a href="personal/certificates/Network Foundations (Network Technology 1) certificate.pdf" target="_blank" class="link underlined">Network Foundations</a>.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="cert"><i class="material-icons">arrow_right</i></span>
+              <div class="cert"><span class="description">Completed the course <a href="personal/certificates/Database Foundations (Information Management) certificate.pdf" target="_blank" class="link underlined">Database Foundations</a>.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="cert"><i class="material-icons">arrow_right</i></span>
+              <div class="cert"><span class="description">Completed the training course in <a href="personal/certificates/JOHN RHYL FERNANDEZ System Integration and Architecture (SAP Business One).pdf" target="_blank" class="link underlined">SAP Basic (Logistics and Financials)</a>.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="cert"><i class="material-icons">arrow_right</i></span>
+              <div class="cert"><span class="description">Completed the course <a href="https://www.freecodecamp.org/certification/Rhyl/responsive-web-design" target="_blank" class="link underlined">freeCodeCamp Responsive Web Design</a>.</span></div>
+            </div>
+            <div class="credentials_container">
+              <span class="cert"><i class="material-icons">arrow_right</i></span>
+              <div class="cert"><span class="description">Completed the course <a href="personal/certificates/Udemy_CSS_JS_Bootstrap_Course_Completion_Certificate.pdf" target="_blank" class="link underlined">CSS, Bootstrap, and JavaScript Web Development</a>.</span></div>
+            </div>
+          </div>
+          <br>
+          <!-- <button type="button" class="download_resume_btn" title="Download Resume" onclick="downloadResume()">Download Resume</button> -->
+          <button type="button" class="download_resume_btn" title="View Resume" onclick="previewResume()">View Resume</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <!-- TODO: Apply CSS animated background for better looking section. -->
+      <div class="container">
+        <div class="page">
+          <h2>Projects</h2>
+        </div>
+        <br>
+        <div class="proj_container">
+          <div class="project_cards">
+            <div class="project_card card_expand_1">
+              <div class="flex_div">
+                <img src="/images/projects/sticaDigitalExamPermit.jpeg" alt="sticaDigitalExamPermit">
+                <h3>STICA Digital Exam Permit</h3>
+                <button type="button" id="project_desc_btn1" class="desc_btn">
+                  <span class="desc_label">Description</span> <i class="material-icons arrow_right">arrow_right</i>
+                </button>
+              </div>
+              <div class="proj_desc_container container_expand_1">
+                <h2 class="head_desc head_expand_1">Role Description</h2>
+                <span class="proj_desc proj_expand_1">
+                  As the Programmer, I contributed to project development, coordinating group 
+                deadlines for on-time completion. I focused on technical aspects, using PHP and 
+                MySQL for implementation. Additionally, I provided regular updates through weekly 
+                progress reports, balancing managerial oversight with hands-on technical 
+                involvement for project success.
+                </span>
+              </div>
+            </div>
+
+            <div class="project_card card_expand_2">
+              <div class="flex_div">
+                <img src="/images/projects/sticaClearance.jpeg" alt="sticaClearanceSS">
+                <h3>STICA Clearance Signing System</h3>
+                <button type="button" id="project_desc_btn2" class="desc_btn">
+                  <span class="desc_label">Description</span> <i class="material-icons arrow_right">arrow_right</i>
+                </button>
+              </div>
+              <div class="proj_desc_container container_expand_2">
+                <h2 class="head_desc head_expand_2">Role Description</h2>
+                <span class="proj_desc proj_expand_2">Led the project to create a clearance signing system for STI College Alabang, 
+                  incorporating AJAX for enhanced record retrieval and PHP for server-side 
+                  functionality. Implemented MySQL database for CRUD operations, and applied UI/UX 
+                  principles.
+                </span>
+              </div>
+            </div>
+            
+            <div class="project_card card_expand_3">
+              <div class="flex_div">
+                <img src="/images/projects/cblicASB.jpeg" alt="cblicASBForm">
+                <h3>CBLIC Alalay sa Buhay Online Application Form</h3>
+                <button type="button" id="project_desc_btn3" class="desc_btn">
+                  <span class="desc_label">Description</span> <i class="material-icons arrow_right">arrow_right</i>
+                </button>
+              </div>
+              <div class="proj_desc_container container_expand_3">
+                <h2 class="head_desc head_expand_3">Role Description</h2>
+                <span class="proj_desc proj_expand_3">Contributed to the project's development using ReactJS and Tailwind CSS for styling, 
+                  with C# employed for server-side API operations, including CRUD functionalities. 
+                  Applied UI/UX principles extensively as a Front-End developer intern.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="logos">
+      <!-- <hr>
+      
+      <div class="pl-logos">
+        <div class="marquee">
+          <article class="pl-logo"><img src="images/logos/HTML5_logo.png" alt="HTML" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/CSS3_Logo.png" alt="CSS" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/js_logo.png" alt="JavaScript" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/PHP_logo.png" alt="PHP" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/React_logo_emblem.png" alt="ReactJS" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/Tailwind_CSS_Logo.png" alt="Tailwind CSS" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/bootstrap_logo.png" alt="Bootstrap" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/MySQL_logo.png" alt="MySQL" class="icon"></article>
+
+          <article class="pl-logo"><img src="images/logos/HTML5_logo.png" alt="HTML" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/CSS3_Logo.png" alt="CSS" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/js_logo.png" alt="JavaScript" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/PHP_logo.png" alt="PHP" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/React_logo_emblem.png" alt="ReactJS" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/Tailwind_CSS_Logo.png" alt="Tailwind CSS" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/bootstrap_logo.png" alt="Bootstrap" class="icon"></article>
+          <article class="pl-logo"><img src="images/logos/MySQL_logo.png" alt="MySQL" class="icon"></article>
+        </div>
+      </div>
+      
+      <hr> -->
+    </article>
+
+    <section id="contact">
+      <div class="page">
+        <h2>Contact</h2>
+      </div>
+      <br>
+      <div class="contact_info">
+        <div class="side_text">
+          <h2 class="side_title">Let's talk about <p>something <span class="blue_text">great</span></p> today.</h2>
+          
+          <div class="contact_info_container">
+            <br><br><br>
+            <div class="side_text_container">
+              <span class="place"><i class="material-icons">place</i></span>
+              <div class="place"><a href="https://www.google.com/maps/search/?api=1&query=Muntinlupa,+Metro+Manila,+Philippines" target="_blank" class="place">Muntinlupa, Metro Manila, Philippines</a></div>
+            </div>
+            <br>
+            <div class="side_text_container">
+              <span class="email"><i class="material-icons">email</i></span>
+              <div class="email"><a href="mailto:johnrhylfernandez7@gmail.com" class="email">johnrhylfernandez7@gmail.com</a></div>
+            </div>
+            <br>
+            <div class="side_text_container">
+              <span class="call"><i class="material-icons">call</i></span>
+              <div class="call"><span>0929 779 8116</span></div>
+            </div>
+            <br>
+            <div class="side_text_container">
+              <span class="link"><i class="material-icons">link</i></span>
+              <div class="link"><a href="https://www.linkedin.com/in/johnrhylfernandez/" target="_blank" class="link">https://www.linkedin.com/in/johnrhylfernandez/</a></div>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <form id="contact_form" class="contact-form"> <!-- method="POST" netlify -->
+          <label for="name">Your Name: </label>
+          <input type="text" name="sender_name" id="name" class="sender_input" placeholder="Name" required>
+          <br>
+          <label for="email">Email: </label>
+          <input type="email" name="sender_email" id="email" class="sender_input" placeholder="name@email.com" required>
+          <br>
+          <label for="subject">Subject: </label>
+          <input type="text" name="sender_subject" id="subject" class="sender_input" placeholder="Subject" required>
+          <br>
+          <label for="message">Message: </label>
+          <textarea name="sender_message" id="message" class="sender_input" placeholder="Type in your thoughts..." required></textarea>
+          <br>
+          <label for="privacy_policy" class="label">
+            <input type="checkbox" class="checkbox" name="privacy_policy" id="privacy_policy" required> <span class="privacy_desc">I agree to the privacy policy</span>
+          </label>          
+          <br>
+          <div class="buttons">
+            <button type="button" class="clear_btn" title="Clear Form">Clear Form</button>
+            <button type="submit" class="submit_btn" title="Submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <button type="button" id="backToTopBtn" title="Back to top">
+      <span class="backToTopText">Back to top</span><i class="material-icons arrow_upward">keyboard_double_arrow_up</i>
+    </button>
+
+    <hr>
+
+    <footer class="footer">
+      <div class="copyrights">
+        <p class="text">&copy; <span id="current-year">2024</span><strong> John Rhyl Fernandez.</strong></p>
+      </div>
+    </footer>
+
+    <!-- Local Scripts -->
+    <script src="js/mainScript.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/header_bg_color.js"></script>
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/typing_text.js"></script>
+    <script src="js/download_resume.js"></script>
+    <script src="js/send_email.js"></script>
+    <script src="js/clear_form.js"></script>
+    <script src="js/back_to_top.js"></script>
+    <script src="js/project_desc.js"></script>
+    <script src="js/privacy_policy.js"></script>
+
+    <!-- Online -->
+    <!-- SweatAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
