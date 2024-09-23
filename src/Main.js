@@ -84,6 +84,15 @@ function Main() {
         });
     };
 
+    function comingSoon() {
+        Swal.fire({
+            title: 'Coming Soon!',
+            text: 'This page is under development. Stay tuned!',
+            icon: 'info',
+            confirmButtonText: 'OK'
+        });
+    }
+
     return (
         <div>
             {/* <div id="preloader">
@@ -174,11 +183,6 @@ function Main() {
                                 <span className="description">President's Lister</span>
                                 <p className='subText'>2 consecutive semesters</p>
                             </div>
-                            {/* <div className="credentials_container">
-                                <span className="achievement"><i className="material-icons">verified</i></span>
-                                <span className="description">3rd Place at CodeFest</span>
-                                <p className='subText'>Tagisan ng Talino Local Competition</p>
-                            </div> */}
                             <div className="credentials_container">
                                 {/* <span className="achievement"><i className="material-icons">verified</i></span> */}
                                 <span className="description">Programmer of the Year</span>
@@ -287,6 +291,10 @@ function Main() {
                                     <span className='tech_used'>MySQL</span>
                                     <span className='tech_used'>QR Code</span>
                                 </div>
+                                <br />
+                                <button className='github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/digital-exam-permit-checker', '_blank')}>
+                                    View on Github
+                                </button>
                             </div>
                         </div>
 
@@ -317,6 +325,10 @@ function Main() {
                                     <span className='tech_used'>Microsoft Azure</span>
                                     <span className='tech_used'>QR Code</span>
                                 </div>
+                                <br />
+                                <button className='github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/clearance-signing-system', '_blank')}>
+                                    View on Github
+                                </button>
                             </div>
                         </div>
                         
@@ -347,6 +359,10 @@ function Main() {
                                     <span className='tech_used'>Microsoft SQL</span>
                                     <span className='tech_used'>Microsoft SQL Server</span>
                                 </div>
+                                <br />
+                                <button className='github-repo-btn' onClick={comingSoon}>
+                                    Coming soon!
+                                </button>
                             </div>
                         </div>
                     </div>
