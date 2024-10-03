@@ -19,6 +19,7 @@ function clearForm(event) {
     // Show the confirmation dialog
     Swal.fire({
         title: 'Are you sure?',
+        // TODO: Fix this. The Bullet is on the right side of the modal.
         html: `
             <p class="swal-p">This will clear the following fields:</p>
             <ul class="swal-ul">
@@ -37,12 +38,12 @@ function clearForm(event) {
             document.getElementById('contact_form').reset();
             Toast.fire({
                 icon: "success",
-                title: "Form cleared!"
+                title: "Form cleared"
             });
         } else if (result.isDismissed) {
             Toast.fire({
-                icon: "error",
-                title: "Form not cleared!"
+                icon: "info",
+                title: "Form not cleared"
             });
         }
     });

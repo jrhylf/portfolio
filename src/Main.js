@@ -12,9 +12,15 @@ import databaseFoundationsCert from './personal/certificates/cert_image/Database
 import sapBasicsCert from './personal/certificates/cert_image/SAP Basics.png';
 import responsiveWebDesignCert from './personal/certificates/cert_image/freeCodeCamp Responsive Web Design Certification.png';
 import webDevelopmentCert from './personal/certificates/cert_image/Udemy_CSS_JS_Bootstrap_Course_Completion_Certificate.jpg';
+
+// Projects Images
 import sticaDEP from './images/projects/sticaDigitalExamPermit.jpeg';
 import sticaCSS from './images/projects/sticaClearance.jpeg';
 import cblicASB from './images/projects/cblicASB.jpeg';
+
+// Mini Projects Images
+// import expenseTracker from './images/mini_projects/expenseTracker.jpeg';
+// import todoList from './images/mini_projects/todoList.jpeg';
 
 // CSS
 import './css/preloader.css';
@@ -134,7 +140,7 @@ function Main() {
                         <p className="home_subText slide-up">Aspiring</p>
                         <div className='typing-text slide-up'>
                             <TypingEffect
-                                text={['Software Developer', 'Software Engineer', 'Web Developer']}
+                                text={['Web Developer', 'Software Developer']}
                                 speed={100}
                                 eraseSpeed={50}
                                 eraseDelay={2000}
@@ -366,6 +372,71 @@ function Main() {
                             </div>
                         </div>
                     </div>
+
+                    {/* <br /><br /> */}
+
+                    {/* MINI PROJECTS */}
+                    {/* <div className="proj_container">
+                        <div className="page">
+                            <h2>Mini Projects</h2>
+                        </div>
+
+                        <div className='mini_proj_container'>
+                            MP1: Simple Expense Tracker
+                            <div className="mini_project_card">
+                                <div className="mini_flex_div">
+                                    <img src={expenseTracker} alt="Expense Tracker" className='mini_proj_image'></img>
+                                    <h3 className="mini_title">Expense Tracker</h3>
+                                </div>
+                                <div className="mini_proj_desc_container">
+                                    <div className='mini-between-container'>
+                                        <h3 className="mini_head_tech">Technologies Used:</h3>
+                                        <div className='technologies'>
+                                            <span className='mini_tech_used'>React</span>
+                                            <span className='mini_tech_used'>Tailwind CSS</span>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div className='mini-between-container'>
+                                        <button className='mini-visit-site-btn' onClick={() => window.open('https://expensetracker-jr.netlify.app/', '_blank')}>
+                                            Visit Site
+                                        </button>
+                                        <button className='mini-github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/expense-tracker-app', '_blank')}>
+                                            View on Github
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            MP2: Simple To-do List App
+                            <div className="mini_project_card">
+                                <div className="mini_flex_div">
+                                    <img src={todoList} alt="To-do List App" className='mini_proj_image'></img>
+                                    <h3 className="mini_title">To-do List App</h3>
+                                </div>
+                                <div className="mini_proj_desc_container">
+                                    <div className='mini-between-container'>
+                                        <h3 className="mini_head_tech">Technologies Used:</h3>
+                                        <div className='technologies'>
+                                            <span className='mini_tech_used'>HTML</span>
+                                            <span className='mini_tech_used'>CSS</span>
+                                            <span className='mini_tech_used'>JavaScript</span>
+                                            <span className='mini_tech_used'>React</span>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div className='mini-between-container'>
+                                        <button className='mini-visit-site-btn' onClick={() => window.open('https://todolist-jr.netlify.app/', '_blank')}>
+                                            Visit Site
+                                        </button>
+                                        <button className='mini-github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/todo-list-app.git', '_blank')}>
+                                            View on Github
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
                 </div>
             </section>
 
@@ -380,6 +451,7 @@ function Main() {
                     <div className="side_text">
                         <h2 className="side_title">Let's talk about <p>something <span className="blue_text">great</span></p> today.</h2>
                         
+                        {/* // TODO: Fix this on tablet screen size */}
                         <div className="contact_info_container">
                             <br /><br />
                             <div className="side_text_container">
