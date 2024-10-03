@@ -808,10 +808,6 @@ footer {
         align-self: center;
     }
 
-    .github-repo-btn {
-        /* max-width: 100%; */
-    }
-
     .contact_info {
         flex-direction: column;
     }
