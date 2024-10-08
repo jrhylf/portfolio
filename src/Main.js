@@ -258,7 +258,9 @@ function Main() {
                         <br />
                         
                         <div className="btn_container">
-                            <button type="button" className="download_resume_btn" title="View Resume" onClick={previewResume}>View Resume</button>
+                            <button type="button" className="download_resume_btn" title="View Resume" onClick={previewResume}>
+                                View Resume<i class='bx bx-link-external'></i>
+                            </button>
                         </div>
                     </div>
                 </div>

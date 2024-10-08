@@ -300,21 +300,33 @@ section {
 }
 
 .download_resume_btn {
+    display: flex;
+    justify-content: center;
     color: var(--text-color3);
     padding: 1rem;
     border: none;
     font-size: 1.1rem;
     width: 100%;
     max-width: 25%;
-    background: linear-gradient(to left, var(--bg-color3) 50%, var(--bg-color2) 50%);
-    background-size: 200% 100%;
+    background: linear-gradient(to left,
+        var(--bg-color3) 33.33%, 
+        var(--text-highlight2) 33.33%, 
+        var(--text-highlight2) 66.66%, 
+        var(--bg-color2) 66.66%
+    );
+    background-size: 300% 100%;
     background-position: right bottom;
-    transition: background-position 0.3s ease;
+    transition: background-position 0.6s ease;
     text-decoration: none;
 }
 
 .download_resume_btn:hover {
     background-position: left bottom;
+}
+
+.download_resume_btn i {
+    margin-left: 0.5rem;
+    font-size: larger;
 }
 
 .proj_container {
@@ -397,15 +409,21 @@ section {
     max-width: 30%;
     padding: 1rem;
     border: solid 2px var(--bg-color3);
-    border-radius: 10px;
-    background-color: var(--bg-color);
+    background: linear-gradient(to left,
+        var(--bg-color) 33.33%, 
+        var(--bg-color2) 33.33%, 
+        var(--bg-color2) 66.66%, 
+        var(--bg-color3) 66.66%
+    );
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: background-position 0.6s ease, color 0.4s ease;
     color: var(--text-color);
     font-weight: 500;
-    transition: background-color 0.2s ease;
 }
 
 .github-repo-btn:hover {
-    background-color: var(--bg-color3);
+    background-position: left bottom;
     color: var(--text-color3);
     font-weight: 100;
 }
@@ -645,10 +663,15 @@ textarea {
     padding: 0.5rem;
     border: none;
     width: 100%;
-    background: linear-gradient(to left, var(--bg-color2) 50%, var(--bg-color3) 50%);
-    background-size: 200% 100%;
+    background: linear-gradient(to left,
+        var(--bg-color2) 33.33%,
+        var(--text-color2) 33.33%,
+        var(--text-color2) 66.66%,
+        var(--bg-color3) 66.66%
+    );
+    background-size: 300% 100%;
     background-position: right bottom;
-    transition: background-position 0.3s ease, outline-offset 0.1s ease;
+    transition: background-position 0.6s ease;
 }
 
 .submit_btn:hover {
@@ -661,15 +684,20 @@ textarea {
     padding: 0.5rem;
     border: solid 2px var(--bg-color2);
     width: 100%;
-    background: linear-gradient(to left, transparent 50%, var(--bg-color2) 50%);
-    background-size: 200% 100%;
+    background: linear-gradient(to left,
+        var(--bg-color) 33.33%, 
+        var(--bg-color3) 33.33%, 
+        var(--bg-color3) 66.66%, 
+        var(--bg-color2) 66.66%
+    );
+    background-size: 300% 100%;
     background-position: right bottom;
-    transition: background-position 0.3s ease, outline-offset 0.1s ease;
+    transition: background-position 0.6s ease, color 0.4s ease;
 }
 
 .clear_btn:hover {
-    color: var(--text-color3);
     background-position: left bottom;
+    color: var(--text-color3);
 }
 
 /* SWAL UL */
