@@ -404,6 +404,8 @@ section {
 }
 
 .github-repo-btn {
+    display: flex;
+    justify-content: center;
     height: auto;
     width: 100%;
     max-width: 30%;
@@ -426,6 +428,11 @@ section {
     background-position: left bottom;
     color: var(--text-color3);
     font-weight: 100;
+}
+
+.github-repo-btn i {
+    margin-left: 0.5rem;
+    font-size: larger;
 }
 
 /* MINI PROJECTS */
@@ -658,6 +665,9 @@ textarea {
 }
 
 .submit_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-color3);
     background-color: var(--bg-color2);
     padding: 0.5rem;
@@ -678,7 +688,15 @@ textarea {
     background-position: left bottom;
 }
 
+.submit_btn i {
+    margin-left: 0.5rem;
+    font-size: 22px;
+}
+
 .clear_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-color);
     background-color: transparent;
     padding: 0.5rem;
@@ -698,6 +716,16 @@ textarea {
 .clear_btn:hover {
     background-position: left bottom;
     color: var(--text-color3);
+
+    /* i {
+        transition: rotate 1s ease;
+        rotate: -360deg;
+    } */
+}
+
+.clear_btn i {
+    margin-left: 0.5rem;
+    font-size: 22px;
 }
 
 /* SWAL UL */

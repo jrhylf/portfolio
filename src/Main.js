@@ -301,7 +301,7 @@ function Main() {
                                 </div>
                                 <br />
                                 <button className='github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/digital-exam-permit-checker', '_blank')}>
-                                    View on Github
+                                    View on Github<i class='bx bx-link-external'></i>
                                 </button>
                             </div>
                         </div>
@@ -335,7 +335,7 @@ function Main() {
                                 </div>
                                 <br />
                                 <button className='github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/clearance-signing-system', '_blank')}>
-                                    View on Github
+                                    View on Github<i class='bx bx-link-external'></i>
                                 </button>
                             </div>
                         </div>
@@ -514,8 +514,8 @@ function Main() {
                         <br />
 
                         <div className="buttons">
-                            <button type="button" className="clear_btn" title="Clear Form" onClick={clearForm}>Clear Form</button>
-                            <button type="submit" className="submit_btn" title="Submit">Submit</button>
+                            <button type="button" className="clear_btn" title="Clear Form" onClick={clearForm}>Clear Form<i class='bx bx-reset'></i></button>
+                            <button type="submit" className="submit_btn" title="Submit">Submit<i class='bx bx-right-arrow-alt' ></i></button>
                         </div>
                     </form>
                 </div>

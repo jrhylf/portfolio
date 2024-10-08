@@ -10,7 +10,8 @@
           "scroll-behavior",
           "scroll-behavior: smooth",
           "float: inline-start",
-          "accent-color"
+          "accent-color",
+          "rotate"
         ]
       }
     ]
