@@ -104,7 +104,7 @@ function Main() {
     return (
         <div>
             {/* <div id="preloader">
-                <img src={logo} alt="Logo" className="preloader-logo"></img>
+                <img src={logo} alt="Logo" className="preloader-logo" width="150" height="auto"></img>
             </div> */}
 
             <header id="header" className="header">
