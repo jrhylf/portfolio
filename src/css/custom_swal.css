@@ -1,0 +1,6 @@
+.swal2-popup {
+    min-width: 32em;
+    width: 50em;
+    max-width: max-content;
+    padding: 1em;
+}

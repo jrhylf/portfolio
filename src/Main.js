@@ -26,7 +26,8 @@ import cblicASB from './images/projects/cblicASB.jpeg';
 import './css/preloader.css';
 import './css/animated_bg.css';
 import './css/back_to_top.css';
-// import './css/custom_scroll.css';
+import './css/custom_swal.css';
+import './css/custom_scroll.css';
 import './css/customized_boxicons.css';
 import './css/home_animation.css';
 import './css/main.css';
@@ -37,6 +38,7 @@ import activeNav from './js/mainScript';
 import previewResume from './js/preview_resume';
 import clearForm from './js/clear_form';
 import privacyPolicy from './js/privacy_policy';
+import { databaseFoundations, sapBasics, webDevelopment, webDesign, networkFoundations } from './js/view_certificate';
 
 function Main() {
     useEffect(() => {
@@ -226,40 +228,37 @@ function Main() {
 
                         <h3>Certificates</h3>
                         <div className="certificates">
-                            <div className="credentials_container">
+                            <button className='view_cert_btn' id='dbf_btn' onClick={databaseFoundations}>
                                 <img src={databaseFoundationsCert} alt="Database Foundations" id="certImage" className='cert_image'></img>
-                                <span className="description">Database Foundations</span>
-                                <p className='subText'>STI College Alabang, in partnership with Oracle</p>
-                            </div>
-                            <div className="credentials_container">
-                                <img src={sapBasicsCert} alt="SAP Basics" id="certImage" className='cert_image'></img>
-                                <span className="description">SAP Basics</span>
-                                <p className='subText'>STI College Alabang, in partnership with FIT Academy</p>
-                            </div>
-                            <div className="credentials_container">
-                                <img src={responsiveWebDesignCert} alt="Responsive Web Design" id="certImage" className='cert_image'></img>
-                                <span className="description">Responsive Web Design</span>
-                                <p className='subText'>freeCodeCamp</p>
-                            </div>
-                            <div className="credentials_container">
-                                <img src={webDevelopmentCert} alt="Web Development" id="certImage" className='cert_image'></img>
-                                <span className="description">Web Development</span>
-                                <p className='subText'>Udemy</p>
-                            </div>
+                                <span className='view_btn'>View Certificate</span>
+                            </button>
 
-                            {/* Last cert always */}
-                            <div className="credentials_container">
+                            <button className='view_cert_btn' id='sap_btn' onClick={sapBasics}>
+                                <img src={sapBasicsCert} alt="SAP Basics" id="certImage" className='cert_image'></img>
+                                <span className='view_btn'>View Certificate</span>
+                            </button>
+
+                            <button className='view_cert_btn' id='webDev_btn' onClick={webDevelopment}>
+                                <img src={webDevelopmentCert} alt="Web Development" id="certImage" className='cert_image'></img>
+                                <span className='view_btn'>View Certificate</span>
+                            </button>
+
+                            <button className='view_cert_btn' id='webDesign_btn' onClick={webDesign}>
+                                <img src={responsiveWebDesignCert} alt="Responsive Web Design" id="certImage" className='cert_image'></img>
+                                <span className='view_btn'>View Certificate</span>
+                            </button>
+
+                            <button className='view_cert_btn' id='nwf_btn' onClick={networkFoundations}>
                                 <img src={networkFoundationsCert} alt="Network Foundations" id="certImage" className='cert_image'></img>
-                                <span className="description">Network Foundations</span>
-                                <p className='subText'>STI College Alabang, in partnership with Huawei</p>
-                            </div>
+                                <span className='view_btn'>View Certificate</span>
+                            </button>
                         </div>
                         
                         <br />
                         
                         <div className="btn_container">
                             <button type="button" className="download_resume_btn" title="View Resume" onClick={previewResume}>
-                                View Resume<i class='bx bx-link-external'></i>
+                                View Resume<i className='bx bx-link-external'></i>
                             </button>
                         </div>
                     </div>
@@ -301,7 +300,7 @@ function Main() {
                                 </div>
                                 <br />
                                 <button className='github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/digital-exam-permit-checker', '_blank')}>
-                                    View on Github<i class='bx bx-link-external'></i>
+                                    View on Github<i className='bx bx-link-external'></i>
                                 </button>
                             </div>
                         </div>
@@ -335,7 +334,7 @@ function Main() {
                                 </div>
                                 <br />
                                 <button className='github-repo-btn' onClick={() => window.open('https://github.com/jrhylf/clearance-signing-system', '_blank')}>
-                                    View on Github<i class='bx bx-link-external'></i>
+                                    View on Github<i className='bx bx-link-external'></i>
                                 </button>
                             </div>
                         </div>
@@ -514,8 +513,8 @@ function Main() {
                         <br />
 
                         <div className="buttons">
-                            <button type="button" className="clear_btn" title="Clear Form" onClick={clearForm}>Clear Form<i class='bx bx-reset'></i></button>
-                            <button type="submit" className="submit_btn" title="Submit">Submit<i class='bx bx-right-arrow-alt' ></i></button>
+                            <button type="button" className="clear_btn" title="Clear Form" onClick={clearForm}>Clear Form<i className='bx bx-reset'></i></button>
+                            <button type="submit" className="submit_btn" title="Submit">Submit<i className='bx bx-right-arrow-alt' ></i></button>
                         </div>
                     </form>
                 </div>

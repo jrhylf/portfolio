@@ -247,10 +247,26 @@ section {
     max-width: max-content;
 }
 
-.achievements, .skills, .certificates {
+.achievements, .skills {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.certificates {
+    columns: 300px;
+    margin-top: 1rem;
+}
+
+.cert_container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.view_cert_btn {
+    position: relative;
+    background-color: transparent;
+    border: none;
 }
 
 .credentials_container {
@@ -277,20 +293,40 @@ section {
     height: auto;
     width: 100%;
     max-width: 600px;
-    border-radius: 6px;
-    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
-.cert_image:hover {
-    transform: scale(1.2);
-    border-radius: 0;
+.view_cert_btn:hover .cert_image {
+    filter: blur(4px);
+}
+
+.view_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: solid 2px var(--bg-color3);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.view_cert_btn:hover .view_btn {
+    opacity: 1;
+    visibility: visible;
 }
 
 .description {
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 800;
-    margin-top: 0.5rem;
 }
 
 .subText {

@@ -10,12 +10,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--bg-color3); /* Color of the scrollbar thumb */
-    border-radius: 10px;
+    background: var(--text-color2); /* Color of the scrollbar thumb */
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-color2); /* Color of the scrollbar thumb on hover */
+    background: var(--bg-color3); /* Color of the scrollbar thumb on hover */
 }
 /* Scroll customization */
 
