@@ -1067,12 +1067,5 @@ footer {
         padding: 0.4rem;
         font-size: 0.8rem;
     }
-
-    /* SWAL */
-    .swal2-popup {
-        min-width: min-content;
-        width: 100%;
-        max-width: max-content;
-    }
 }
 
