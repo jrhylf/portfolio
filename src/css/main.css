@@ -254,6 +254,7 @@ section {
 }
 
 .certificates {
+    width: 100%;
     columns: 300px;
     margin-top: 1rem;
 }
@@ -421,7 +422,9 @@ section {
 
 .technologies {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .tech_used {
@@ -835,6 +838,10 @@ footer {
         max-height: 28rem;
     }
 
+    .desc {
+        max-width: 100%;
+    }
+
     .desc, .profile-container, .center_mobile {
         margin: 0 auto;
     }
@@ -881,14 +888,6 @@ footer {
         align-items: end;
     }
 
-    .technologies {
-        align-items: center;
-    }
-
-    .tech_used {
-        align-self: center;
-    }
-
     .head_desc {
         font-size: 1.7rem;
         align-self: center;
@@ -897,6 +896,14 @@ footer {
     .proj_desc, .head_tech {
         font-size: 1.2rem;
         text-align: center;
+        align-self: center;
+    }
+
+    .technologies {
+        justify-content: center;
+    }
+
+    .tech_used {
         align-self: center;
     }
 
@@ -960,6 +967,10 @@ footer {
         max-height: 28rem;
     }
 
+    .desc {
+        max-width: 100%;
+    }
+
     .desc, .profile-container, .center_mobile {
         margin: 0 auto;
     }
@@ -984,6 +995,7 @@ footer {
 
     .project_card {
         flex-direction: column;
+        max-width: 100%;
     }
 
     .mini_project_card {
@@ -1054,6 +1066,13 @@ footer {
     .sender_input {
         padding: 0.4rem;
         font-size: 0.8rem;
+    }
+
+    /* SWAL */
+    .swal2-popup {
+        min-width: min-content;
+        width: 100%;
+        max-width: max-content;
     }
 }
 
