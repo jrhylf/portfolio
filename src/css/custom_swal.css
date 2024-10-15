@@ -4,3 +4,14 @@
     max-width: max-content;
     padding: 1em;
 }
+
+.swal2-actions {
+    width: 100%;
+}
+
+.swal2-confirm {
+    width: 100%;
+    max-width: 30%;
+    border-radius: 0;
+    background-color: var(--bg-color2);
+}

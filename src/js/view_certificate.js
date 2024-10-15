@@ -37,7 +37,7 @@ function databaseFoundations() {
         imageAlt: "Database Foundations Certificate",
         html: `
             <span class="description">Database Foundations</span>
-            <p class='subText'>STI College Alabang, in partnership with Oracle</p>
+            <p class='subText'>STI College Alabang, Oracle</p>
         `,
     });
     return viewDBF_result;
@@ -49,7 +49,7 @@ function sapBasics() {
         imageAlt: "SAP Basics Certificate",
         html: `
             <span class="description">SAP Basics</span>
-            <p class='subText'>STI College Alabang, in partnership with FIT Academy</p>
+            <p class='subText'>STI College Alabang, FIT Academy</p>
         `,
     });
     return viewSAP_result;
@@ -85,7 +85,7 @@ function networkFoundations() {
         imageAlt: "Network Foundations Certificate",
         html: `
             <span class="description">Network Foundations</span>
-            <p class='subText'>STI College Alabang, in partnership with Huawei</p>
+            <p class='subText'>STI College Alabang, Huawei</p>
         `,
     });
     return viewNWF_result;
