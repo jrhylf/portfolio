@@ -3,8 +3,6 @@
 }
 
 .swal2-confirm {
-    width: 100%;
-    max-width: 30%;
     border-radius: 0;
     background-color: var(--bg-color2);
 }
