@@ -487,22 +487,22 @@ function Main() {
 
                     <form id="contact_form" className="contact-form" onSubmit={handleSubmit}>
                         <label htmlFor='name'>Your Name: </label>
-                        <input type="text" name="sender_name" id="name" className="sender_input" placeholder="Name" required />
+                        <input type="text" name="sender_name" id="name" className="sender_input" placeholder="Enter your full name" required />
                         
                         <br />
 
                         <label htmlFor='email'>Email: </label>
-                        <input type="email" name="sender_email" id="email" className="sender_input" placeholder="name@email.com" required />
+                        <input type="email" name="sender_email" id="email" className="sender_input" placeholder="yourname@example.com" required />
                         
                         <br />
 
                         <label htmlFor='subject'>Subject: </label>
-                        <input type="text" name="sender_subject" id="subject" className="sender_input" placeholder="Subject" required />
+                        <input type="text" name="sender_subject" id="subject" className="sender_input" placeholder="Briefly describe your inquiry" required />
                         
                         <br />
 
                         <label htmlFor='message'>Message: </label>
-                        <textarea name="sender_message" id="message" className="sender_input" placeholder="Type in your thoughts..." required></textarea>
+                        <textarea name="sender_message" id="message" className="sender_input" placeholder="Feel free to share your thoughts..." required></textarea>
                         
                         <br />
 
