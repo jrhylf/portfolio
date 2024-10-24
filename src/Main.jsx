@@ -110,21 +110,25 @@ function Main() {
             <header id="header" className="header">
                 <div className='header-content'>
                     <div className="img_container">
-                        <img src={logo} alt="JF logo" className="logo" title="John Rhyl Fernandez"></img>
+                        <a href="#home">
+                            <img src={logo} alt="John Rhyl Fernandez Logo" className="logo" title="John Rhyl Fernandez" loading='lazy'></img>
+                        </a>
                     </div>
 
-                    <nav>
+                    <nav aria-label="Main Navigation">
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+                            <li><a href="#about" aria-label="Go to About section">About</a></li>
+                            <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+                            <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
                         </ul>
                     </nav>
                     
-                    {/* <div className="menuIcon_container" title="Menu">
-                        <i className="material-icons" title="Menu">menu_icon</i>
-                    </div> */}
+                    {/*
+                        <div className="menuIcon_container" title="Open Menu" aria-label="Open Navigation Menu">
+                            <i className="material-icons" title="Open Menu" aria-hidden="true">menu_icon</i>
+                        </div>
+                    */}
                 </div>
             </header>
 
@@ -158,7 +162,7 @@ function Main() {
                 <div className="about_description">
                     <div className="page">
                         <h2>About me</h2>
-                        <img src={myImage} alt="myImage" id="myImage" className='self_image'></img>
+                        <img src={myImage} alt="myImage" id="myImage" className='self_image' loading='lazy'></img>
                     </div>
                     
                     <div className="desc">
@@ -229,27 +233,27 @@ function Main() {
                         <h3>Certificates</h3>
                         <div className="certificates">
                             <button className='view_cert_btn' id='dbf_btn' onClick={databaseFoundations}>
-                                <img src={databaseFoundationsCert} alt="Database Foundations" id="certImage" className='cert_image'></img>
+                                <img src={databaseFoundationsCert} alt="Database Foundations" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
                             <button className='view_cert_btn' id='sap_btn' onClick={sapBasics}>
-                                <img src={sapBasicsCert} alt="SAP Basics" id="certImage" className='cert_image'></img>
+                                <img src={sapBasicsCert} alt="SAP Basics" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
                             <button className='view_cert_btn' id='webDev_btn' onClick={webDevelopment}>
-                                <img src={webDevelopmentCert} alt="Web Development" id="certImage" className='cert_image'></img>
+                                <img src={webDevelopmentCert} alt="Web Development" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
                             <button className='view_cert_btn' id='webDesign_btn' onClick={webDesign}>
-                                <img src={responsiveWebDesignCert} alt="Responsive Web Design" id="certImage" className='cert_image'></img>
+                                <img src={responsiveWebDesignCert} alt="Responsive Web Design" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
                             <button className='view_cert_btn' id='nwf_btn' onClick={networkFoundations}>
-                                <img src={networkFoundationsCert} alt="Network Foundations" id="certImage" className='cert_image'></img>
+                                <img src={networkFoundationsCert} alt="Network Foundations" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
                         </div>
@@ -277,7 +281,7 @@ function Main() {
                     <div className="proj_container">
                         <div className="project_card">
                             <div className="flex_div">
-                                <img src={sticaDEP} alt="STICA Digital" className='proj_image'></img>
+                                <img src={sticaDEP} alt="STICA Digital" className='proj_image' loading='lazy'></img>
                                 <h3>STICA Digital Exam Permit</h3>
                             </div>
                             <div className="proj_desc_container">
@@ -307,7 +311,7 @@ function Main() {
 
                         <div className="project_card">
                             <div className="flex_div">
-                                <img src={sticaCSS} alt="STICA Clearance" className='proj_image'></img>
+                                <img src={sticaCSS} alt="STICA Clearance" className='proj_image' loading='lazy'></img>
                                 <h3>STICA Clearance Signing System</h3>
                             </div>
                             <div className="proj_desc_container">
@@ -341,7 +345,7 @@ function Main() {
                         
                         <div className="project_card">
                             <div className="flex_div">
-                                <img src={cblicASB} alt="CBLIC ASB" className='proj_image'></img>
+                                <img src={cblicASB} alt="CBLIC ASB" className='proj_image' loading='lazy'></img>
                                 <h3>CBLIC Alalay sa Buhay Online Application Form</h3>
                             </div>
                             <div className="proj_desc_container">
@@ -386,7 +390,7 @@ function Main() {
                             MP1: Simple Expense Tracker
                             <div className="mini_project_card">
                                 <div className="mini_flex_div">
-                                    <img src={expenseTracker} alt="Expense Tracker" className='mini_proj_image'></img>
+                                    <img src={expenseTracker} alt="Expense Tracker" className='mini_proj_image' loading='lazy'></img>
                                     <h3 className="mini_title">Expense Tracker</h3>
                                 </div>
                                 <div className="mini_proj_desc_container">
@@ -412,7 +416,7 @@ function Main() {
                             MP2: Simple To-do List App
                             <div className="mini_project_card">
                                 <div className="mini_flex_div">
-                                    <img src={todoList} alt="To-do List App" className='mini_proj_image'></img>
+                                    <img src={todoList} alt="To-do List App" className='mini_proj_image' loading='lazy'></img>
                                     <h3 className="mini_title">To-do List App</h3>
                                 </div>
                                 <div className="mini_proj_desc_container">
