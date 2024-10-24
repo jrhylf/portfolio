@@ -28,7 +28,7 @@ import './css/animated_bg.css';
 import './css/back_to_top.css';
 import './css/custom_swal.css';
 import './css/custom_scroll.css';
-import './css/customized_boxicons.css';
+import './css/custom_boxicons.css';
 import './css/home_animation.css';
 import './css/main.css';
 
@@ -109,13 +109,17 @@ function Main() {
 
             <header id="header" className="header">
                 <div className='header-content'>
-                    <div className="img_container">
+                    {/* <div className="img_container">
                         <a href="#home">
                             <img src={logo} alt="John Rhyl Fernandez Logo" className="logo" title="John Rhyl Fernandez" loading='lazy'></img>
                         </a>
-                    </div>
+                    </div> */}
 
                     <nav aria-label="Main Navigation">
+                        <a href="#home">
+                            <img src={logo} alt="John Rhyl Fernandez Logo" className="logo" title="John Rhyl Fernandez" loading='lazy'></img>
+                        </a>
+
                         <ul>
                             <li><a href="#home" aria-label="Go to Home section">Home</a></li>
                             <li><a href="#about" aria-label="Go to About section">About</a></li>

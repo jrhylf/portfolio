@@ -58,7 +58,6 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
     padding: 30px;
@@ -68,8 +67,13 @@ header {
     margin: 0 auto;
     border-radius: 50px;
     border: solid 2px var(--bg-color2);
-    z-index: 1000;
     transition: 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 nav ul {
@@ -83,7 +87,7 @@ nav ul li {
     margin: auto 10px;
 }
 
-nav a {
+nav ul li a {
     position: relative;
     width: 100%;
     height: auto;
@@ -94,7 +98,7 @@ nav a {
     transition: color 0.2s ease;
 }
 
-nav a::after {
+nav ul li a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -105,11 +109,11 @@ nav a::after {
     transition: width 0.2s ease;
 }
 
-nav a:hover, nav a.active {
+nav ul li a:hover, nav ul li a.active {
     color: var(--text-highlight);
 }
 
-nav a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
     background-color: var(--text-highlight);
 }
