@@ -1,5 +1,11 @@
 .bx {
     font-size: 1.5rem;
-    margin: auto 0;
+    margin: auto 0 auto 0.5rem;
+}
+
+box-icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 1rem;
 }
 

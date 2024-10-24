@@ -242,6 +242,10 @@ section {
     max-width: max-content;
 }
 
+.profile:hover {
+    color: var(--text-color);
+}
+
 .profile:visited {
     color: var(--text-highlight2);
 }
@@ -292,6 +296,11 @@ section {
     border-radius: 10px;
     background-color: var(--bg-color);
     box-shadow: 2px 4px 8px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.credentials_container:hover {
+    transform: translateY(-10px);
 }
 
 .cert_image {
@@ -683,6 +692,9 @@ textarea {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: max-content;
 }
 
 .checkbox {

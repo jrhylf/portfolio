@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
+import 'boxicons';
 import 'boxicons/css/boxicons.min.css';
 import TypingEffect from 'react-typing-effect';
 
@@ -173,9 +174,8 @@ function Main() {
                         
                         <div className="center_mobile">
                             <span>
-                                A recent graduate from STI College Alabang specializing in 
-                                Web Development. Developed several software projects, 
-                                showcasing technical skills and achieving successful results.
+                                Aspiring software developer with a passion for technology, eager to learn and grow.
+                                Focused on building effective solutions while continuously expanding skills.
                             </span>
                         </div>
 
@@ -184,18 +184,22 @@ function Main() {
                         <h3>Achievements</h3>
                         <ul className="achievements">
                             <li className="credentials_container">
+                                <box-icon name='award' ></box-icon>
                                 <span className="description">Dean's Lister</span>
                                 <p className='subText'>3 consecutive semesters</p>
                             </li>
                             <li className="credentials_container">
+                                <box-icon name='award' ></box-icon>
                                 <span className="description">President's Lister</span>
                                 <p className='subText'>2 consecutive semesters</p>
                             </li>
                             <li className="credentials_container">
+                                <box-icon name='code-alt' ></box-icon>
                                 <span className="description">Programmer of the Year</span>
                                 <p className='subText'>A.Y. 2023-2024</p>
                             </li>
                             <li className="credentials_container">
+                                <box-icon type='solid' name='graduation'></box-icon>
                                 <span className="description">Graduated Cum Laude</span>
                                 <p className='subText'>A.Y. 2023-2024</p>
                             </li>
