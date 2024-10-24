@@ -109,12 +109,6 @@ function Main() {
 
             <header id="header" className="header">
                 <div className='header-content'>
-                    {/* <div className="img_container">
-                        <a href="#home">
-                            <img src={logo} alt="John Rhyl Fernandez Logo" className="logo" title="John Rhyl Fernandez" loading='lazy'></img>
-                        </a>
-                    </div> */}
-
                     <nav aria-label="Main Navigation">
                         <a href="#home">
                             <img src={logo} alt="John Rhyl Fernandez Logo" className="logo" title="John Rhyl Fernandez" loading='lazy'></img>
@@ -166,13 +160,13 @@ function Main() {
                 <div className="about_description">
                     <div className="page">
                         <h2>About me</h2>
-                        <img src={myImage} alt="myImage" id="myImage" className='self_image' loading='lazy'></img>
+                        <img src={myImage} alt="John Rhyl Fernandez" id="myImage" className='self_image' loading='lazy'></img>
                     </div>
                     
                     <div className="desc">
                         <div className="profile-container">
                             <h2>Fernandez, John Rhyl R.</h2>
-                            <a href="https://www.linkedin.com/in/johnrhylfernandez/" target="_blank" rel="noreferrer" className="profile">LinkedIn Profile</a>
+                            <a href="https://www.linkedin.com/in/johnrhylfernandez/" target="_blank" rel="noopener noreferrer" className="profile">LinkedIn Profile</a>
                         </div>
                         
                         <br />
@@ -188,75 +182,68 @@ function Main() {
                         <br />
 
                         <h3>Achievements</h3>
-                        <div className="achievements">
-                            <div className="credentials_container">
-                                {/* <span className="achievement"><i className="material-icons">verified</i></span> */}
+                        <ul className="achievements">
+                            <li className="credentials_container">
                                 <span className="description">Dean's Lister</span>
                                 <p className='subText'>3 consecutive semesters</p>
-                            </div>
-                            <div className="credentials_container">
-                                {/* <span className="achievement"><i className="material-icons">verified</i></span> */}
+                            </li>
+                            <li className="credentials_container">
                                 <span className="description">President's Lister</span>
                                 <p className='subText'>2 consecutive semesters</p>
-                            </div>
-                            <div className="credentials_container">
-                                {/* <span className="achievement"><i className="material-icons">verified</i></span> */}
+                            </li>
+                            <li className="credentials_container">
                                 <span className="description">Programmer of the Year</span>
                                 <p className='subText'>A.Y. 2023-2024</p>
-                            </div>
-                            <div className="credentials_container">
-                                {/* <span className="achievement"><i className="material-icons">verified</i></span> */}
+                            </li>
+                            <li className="credentials_container">
                                 <span className="description">Graduated Cum Laude</span>
                                 <p className='subText'>A.Y. 2023-2024</p>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
 
                         <br />
 
                         <h3>Technical Skills</h3>
-                        <div className="skills">
-                            <div className="credentials_container">
-                                {/* <span className="skill"><i className="material-icons">arrow_right</i></span> */}
+                        <ul className="skills">
+                            <li className="credentials_container">
                                 <span className="description">Database Management</span>
                                 <p className='subText'>SQL, MS SQL Server, Entity Relationship Diagrams (ERDs)</p>
-                            </div>
-                            <div className="credentials_container">
-                                {/* <span className="skill"><i className="material-icons">arrow_right</i></span> */}
+                            </li>
+                            <li className="credentials_container">
                                 <span className="description">Web Development</span>
                                 <p className='subText'>React, Tailwind CSS, Bootstrap, AJAX, PHP, MySQL, XAMPP</p>
-                            </div>
-                            <div className="credentials_container">
-                                {/* <span className="skill"><i className="material-icons">arrow_right</i></span> */}
+                            </li>
+                            <li className="credentials_container">
                                 <span className="description">Software Development</span>
                                 <p className='subText'>C#, Visual Studio, VS Code</p>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
 
                         <br />
 
                         <h3>Certificates</h3>
                         <div className="certificates">
-                            <button className='view_cert_btn' id='dbf_btn' onClick={databaseFoundations}>
+                            <button className='view_cert_btn' id='dbf_btn' onClick={databaseFoundations} aria-label="View Database Foundations Certificate">
                                 <img src={databaseFoundationsCert} alt="Database Foundations" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
-                            <button className='view_cert_btn' id='sap_btn' onClick={sapBasics}>
+                            <button className='view_cert_btn' id='sap_btn' onClick={sapBasics} aria-label="View SAP Business One Certificate">
                                 <img src={sapBasicsCert} alt="SAP Basics" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
-                            <button className='view_cert_btn' id='webDev_btn' onClick={webDevelopment}>
+                            <button className='view_cert_btn' id='webDev_btn' onClick={webDevelopment} aria-label="View Web Development Certificate">
                                 <img src={webDevelopmentCert} alt="Web Development" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
-                            <button className='view_cert_btn' id='webDesign_btn' onClick={webDesign}>
+                            <button className='view_cert_btn' id='webDesign_btn' onClick={webDesign} aria-label="View Responsive Web Design Certificate">
                                 <img src={responsiveWebDesignCert} alt="Responsive Web Design" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
 
-                            <button className='view_cert_btn' id='nwf_btn' onClick={networkFoundations}>
+                            <button className='view_cert_btn' id='nwf_btn' onClick={networkFoundations} aria-label="View Network Foundations Certificate">
                                 <img src={networkFoundationsCert} alt="Network Foundations" id="certImage" className='cert_image' loading='lazy'></img>
                                 <span className='view_btn'>View Certificate</span>
                             </button>
@@ -265,7 +252,7 @@ function Main() {
                         <br />
                         
                         <div className="btn_container">
-                            <button type="button" className="download_resume_btn" title="View Resume" onClick={previewResume}>
+                            <button type="button" className="download_resume_btn" title="View Resume" onClick={previewResume} aria-label="Download or View Resume">
                                 View Resume<i className='bx bx-link-external'></i>
                             </button>
                         </div>
