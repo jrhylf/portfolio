@@ -211,7 +211,7 @@ function Main() {
                         <ul className="skills">
                             <li className="credentials_container">
                                 <span className="description">Database Management</span>
-                                <p className='subText'>SQL, MS SQL Server, Entity Relationship Diagrams (ERDs)</p>
+                                <p className='subText'>MS SQL, MS SQL Server, Entity Relationship Diagrams (ERDs)</p>
                             </li>
                             <li className="credentials_container">
                                 <span className="description">Web Development</span>
@@ -219,7 +219,7 @@ function Main() {
                             </li>
                             <li className="credentials_container">
                                 <span className="description">Software Development</span>
-                                <p className='subText'>C#, Visual Studio, VS Code</p>
+                                <p className='subText'>Java, C#, Visual Studio, VS Code</p>
                             </li>
                         </ul>
 
