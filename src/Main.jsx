@@ -111,9 +111,9 @@ function Main() {
             <header id="header" className="header">
                 <div className='header-content'>
                     <nav aria-label="Main Navigation">
-                        <a href="#home">
+                        {/* <a href="#home"> */}
                             <img src={logo} alt="John Rhyl Fernandez Logo" className="logo" title="John Rhyl Fernandez" loading='lazy'></img>
-                        </a>
+                        {/* </a> */}
 
                         <ul>
                             <li><a href="#home" aria-label="Go to Home section">Home</a></li>

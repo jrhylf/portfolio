@@ -85,6 +85,8 @@ nav ul {
 
 nav ul li {
     margin: auto 10px;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
@@ -98,6 +100,7 @@ nav ul li a {
     transition: color 0.2s ease;
 }
 
+/* Underline animation from */
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -109,10 +112,12 @@ nav ul li a::after {
     transition: width 0.2s ease;
 }
 
+/* Set nav ul li a text colored when active */
 nav ul li a:hover, nav ul li a.active {
     color: var(--text-highlight);
 }
 
+/* Underline animation to */
 nav ul li a:hover::after {
     width: 100%;
     background-color: var(--text-highlight);
