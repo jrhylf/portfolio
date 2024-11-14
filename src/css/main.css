@@ -414,11 +414,20 @@ section {
     max-width: 50%;
 }
 
+.flex_div > div {
+    overflow: hidden;
+}
+
 .proj_image {
     height: auto;
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.proj_image:hover {
+    transform: scale(1.1);
 }
 
 .proj_desc_container {
@@ -1003,6 +1012,20 @@ footer {
 
     .credentials_container {
         max-width: 100%;
+    }
+
+    .awards:nth-child(odd) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .awards:nth-child(even) {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .awards > box-icon {
+        margin: 0;
     }
 
     .btn_container {

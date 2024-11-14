@@ -183,25 +183,33 @@ function Main() {
 
                         <h3>Achievements</h3>
                         <ul className="achievements">
-                            <li className="credentials_container">
+                            <li className="credentials_container awards">
                                 <box-icon name='award' ></box-icon>
-                                <span className="description">Dean's Lister</span>
-                                <p className='subText'>3 consecutive semesters</p>
+                                <div>
+                                    <span className="description">Dean's Lister</span>
+                                    <p className='subText'>3 consecutive semesters</p>
+                                </div>
                             </li>
-                            <li className="credentials_container">
+                            <li className="credentials_container awards">
                                 <box-icon name='award' ></box-icon>
-                                <span className="description">President's Lister</span>
-                                <p className='subText'>2 consecutive semesters</p>
+                                <div>
+                                    <span className="description">President's Lister</span>
+                                    <p className='subText'>2 consecutive semesters</p>
+                                </div>
                             </li>
-                            <li className="credentials_container">
+                            <li className="credentials_container awards">
                                 <box-icon name='code-alt' ></box-icon>
-                                <span className="description">Programmer of the Year</span>
-                                <p className='subText'>A.Y. 2023-2024</p>
+                                <div>
+                                    <span className="description">Programmer of the Year</span>
+                                    <p className='subText'>A.Y. 2023-2024</p>
+                                </div>
                             </li>
-                            <li className="credentials_container">
+                            <li className="credentials_container awards">
                                 <box-icon type='solid' name='graduation'></box-icon>
-                                <span className="description">Graduated Cum Laude</span>
-                                <p className='subText'>A.Y. 2023-2024</p>
+                                <div>
+                                    <span className="description">Graduated Cum Laude</span>
+                                    <p className='subText'>A.Y. 2023-2024</p>
+                                </div>
                             </li>
                         </ul>
 
@@ -276,7 +284,9 @@ function Main() {
                     <div className="proj_container">
                         <div className="project_card">
                             <div className="flex_div">
-                                <img src={sticaDEP} alt="STICA Digital" className='proj_image' loading='lazy'></img>
+                                <div>
+                                    <img src={sticaDEP} alt="STICA Digital" className='proj_image' loading='lazy'></img>
+                                </div>
                                 <h3>STICA Digital Exam Permit</h3>
                             </div>
                             <div className="proj_desc_container">
@@ -306,7 +316,9 @@ function Main() {
 
                         <div className="project_card">
                             <div className="flex_div">
-                                <img src={sticaCSS} alt="STICA Clearance" className='proj_image' loading='lazy'></img>
+                                <div>
+                                    <img src={sticaCSS} alt="STICA Clearance" className='proj_image' loading='lazy'></img>
+                                </div>
                                 <h3>STICA Clearance Signing System</h3>
                             </div>
                             <div className="proj_desc_container">
@@ -340,7 +352,9 @@ function Main() {
                         
                         <div className="project_card">
                             <div className="flex_div">
-                                <img src={cblicASB} alt="CBLIC ASB" className='proj_image' loading='lazy'></img>
+                                <div>
+                                    <img src={cblicASB} alt="CBLIC ASB" className='proj_image' loading='lazy'></img>
+                                </div>
                                 <h3>CBLIC Alalay sa Buhay Online Application Form</h3>
                             </div>
                             <div className="proj_desc_container">
